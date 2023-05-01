@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+    <title>Авторизация</title>
+</head>
+<body>
+<form class="center_block" method="POST">
+  <label for="login">Логин:</label>
+  <input class="input_str" type="text" id="login" name="name"><br>
+
+  <label for="password">Пароль:</label>
+  <input class="input_str" type="password" id="password" name="password"><br>
+
+  <input type="submit" value="Войти">
+</form>
+</body>
+</html>

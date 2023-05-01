@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+    <title>Аккаунт</title>
+</head>
+<body>
+<nav>
+  <ul>
+    <li class="dropdown">
+      <img class="icon" src="{{ url_for('static', filename='icon.png') }}" width="64" alt="Icon">
+      <div class="dropdown-content">
+        <a href="/login">Выход</a>
+        <a href="/">Почта</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<div class="centred_text">
+    <h1>Ваш Аккаунт:</h1>
+</div>
+<div class="main">
+    <div class="column">
+        <div class="account_block">
+            <p>Почты:</p>
+            <ul>
+                <li>1. testgmail@gmail.com</li>
+                <li>2. mymail@gmail.com</li>
+                <li>3. testgmail@gmail.com</li>
+                <li>4. mymail@gmail.com</li>
+                <li>5. testgmail@gmail.com</li>
+                <li>6. mymail@gmail.com</li>
+                <li>7. testgmail@gmail.com</li>
+                <li>8. mymail@gmail.com</li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="column">
+        <div class="account_block">
+            <p>О себе:</p>
+            <ul>
+                <li>ФИО:</li>
+                <li>Номер телефона:</li>
+            </ul>
+        </div>
+        <div class="account_block">
+            <p>Добавить почту:</p>
+            <form action="" method="POST">
+                <label>Email:</label>
+                <input type="text" name="login"><br>
+                <label>Password:</label>
+                <input type="text" name="passw"><br>
+                <button type="submit">Добавить</button>
+            </form>
+        </div>
+        <div class="account_block">
+            <p>Удалить почту:</p>
+            <form action="" method="POST">
+                <label>Email:</label>
+                <input type="text" name="login"><br>
+                <button type="submit">Удалить</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

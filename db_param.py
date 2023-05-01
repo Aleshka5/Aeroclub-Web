@@ -1,0 +1,5 @@
+HOST_DB = 'containers-us-west-195.railway.app'
+USER_DB = 'postgres'
+PASSWORD_DB = 'exJIop0opMPeaQ9hdIBn'
+NAME_DB = 'railway'
+PORT_DB = '5683'

@@ -1,0 +1,230 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+p{
+margin:2px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input{
+    margin: 5px;
+}
+
+.main {
+display: flex;
+margin-left: 10%;
+margin-right: 10%;
+/*transform: translate(-50%, -50%);*/
+justify-content: center;
+align-items: flex-start;
+padding-left: 20px;
+padding-right: 20px;
+}
+.column {
+width: 50%;
+margin: 10px;
+}
+ul {
+list-style: none;
+padding: 5px;
+}
+li {
+margin-top: 5px;
+padding: 5px;
+}
+
+/*COLUMNS AND LETTERS*/
+
+.checked_mail{
+border-radius:10px;
+padding:10px;
+margin-top: 10px;
+background-color:#F0F0F0;
+box-shadow: 0 0 10px rgba(50, 50, 50, 0.4);
+}
+
+.checked_mail:hover {
+    transition: all 0.3s ease; /* Add transition animation */
+    border-radius: 30px; /* Increase the radius to 30 pixels */
+    box-shadow: 0 0 15px rgba(10, 10, 200, 0.4);
+}
+
+.not_checked_mail{
+border-radius:10px;
+padding:10px;
+margin-top: 5px;
+background-color:#BFBFBF;
+box-shadow: 0 0 10px rgba(50, 50, 50, 0.4);
+}
+
+.not_checked_mail:hover {
+    transition: all 0.3s ease; /* Add transition animation */
+    border-radius: 30px; /* Increase the radius to 30 pixels */
+    box-shadow: 0 0 15px rgba(10, 10, 200, 0.4);
+}
+
+.mail_info{
+color: grey;
+margin: 0px;
+padding: 0px;
+}
+
+.icon:hover{
+    transition: all 0.3s ease; /* Add transition animation */
+    border-radius:50%;
+    box-shadow: 0 0 8px rgba(10, 10, 200, 0.4);
+    transform: rotate(-90deg);
+    background-color:white;
+}
+
+/*NAVIGATION BAR*/
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0px;
+    background-color: #FFFFFF;
+}
+
+nav ul {
+    display: flex;
+    position: fixed;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#BFBFFF;
+    border-radius:20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: -45px; /* Отступ слева */
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+.centred_text{
+    text-align:center;
+    padding: 20px;
+}
+
+.account_block{
+    border-radius:15px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color:#F0F0F0;
+    box-shadow: 0 0 5px rgba(50, 50, 50, 0.3);
+}
+
+.letter_centred{
+    display:flex;
+    width:100%;
+    justify-content:center;
+}
+/* LOGIN FORM */
+input[type=submit] {
+    /* Add these styles */
+    background-color: #38B0D9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+#button {
+	cursor: pointer;
+}
+
+input[type='submit']:hover{
+	background-color:#4F8EDC;
+	transition: all 0.5s ease-in-out;
+}
+
+.input_str {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Set the width, height and box sizing of the input field */
+.input_str {
+  width: 60%;
+  height: 38px;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius:10px;
+}
+
+/* Styling the placeholder text */
+::-webkit-input-placeholder {
+   color: gray();
+}
+
+/* Applying arrow icon next to input field */
+#icon-search:before {
+  margin-left: 10px;
+  color: gray();
+}
+
+/* Focused state of the input field */
+.input_str:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.4);
+}
+
+.center_block {
+	position: absolute;
+	top: 45%; left: 50%;
+	transform: translate(-50%, -50%);
+	background-color:#BFBFBF;
+	border-radius:30px;
+	padding:30px;
+	box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
+}

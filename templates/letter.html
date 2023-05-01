@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+    <title>Письмо</title>
+</head>
+<body>
+<nav>
+  <ul>
+    <li class="dropdown">
+      <img class="icon" src="{{ url_for('static', filename='icon.png') }}" width="64" alt="Icon">
+      <div class="dropdown-content">
+        <a href="/login">Выход</a>
+        <a href="/account">Аккаунт</a>
+        <a href="/">Почта</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<div class="letter_centred">
+    <div class="column">
+        <ul>
+            <li>
+                <div class="account_block">
+                    <h2>Тема письма.</h2>
+                    <hr>
+                    <div class="mail_info">
+                        <p>14:53 / 02.04.2025 / Понедельник</p>
+                    </div>
+                    <hr>
+                    <h4>Тип письма:</h4>
+                    <h4>Имя клиента:</h4>
+                    <h4>Страна отправления:</h4>
+                    <h4>Страна прибытия:</h4><br>
+                    <div calss="letter_text">
+                        <p>Добрый день, меня зовут Игорь . . .</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
