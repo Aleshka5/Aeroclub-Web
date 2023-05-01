@@ -3,6 +3,8 @@ import os
 from passlib.hash import pbkdf2_sha256
 import psycopg2
 from dotenv import load_dotenv, find_dotenv
+import click
+from create_db import create_db
 
 load_dotenv(find_dotenv())
 
@@ -62,6 +64,10 @@ def main_mail():
 @app.route('/letter/', methods=['GET'])
 def letter_view():
     return render_template('letter.html')
+
+@click.command("initdb")
+def initdb():
+    create_db()
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",debug=True)
