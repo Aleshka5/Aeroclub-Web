@@ -1,5 +1,5 @@
 import psycopg2
-from db_param import *
+from db_param import HOST_DB, USER_DB, PASSWORD_DB, NAME_DB, PORT_DB
 
 try:
     connection = psycopg2.connect(
