@@ -1,16 +1,18 @@
 from flask import Flask, render_template, request
-import requests
+import os
 from passlib.hash import pbkdf2_sha256
 import psycopg2
-from db_param import *
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 app = Flask(__name__,static_folder='static')
 conn = psycopg2.connect(
-        host=HOST_DB,
-        user=USER_DB,
-        password=PASSWORD_DB,
-        database=NAME_DB,
-        port=PORT_DB
+        host=os.environ.get("HOST_DB"),
+        user=os.environ.get("USER_DB"),
+        password=os.environ.get("PASSWORD_DB"),
+        database=os.environ.get("NAME_DB"),
+        port=os.environ.get("PORT_DB")
     )
 conn.autocommit = True
 
